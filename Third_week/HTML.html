@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Luxury Smart Watch</title>
+    <link rel="stylesheet" href="CSS.css"> 
+    <link rel="stylesheet" href="product-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>...</header> 
+
+    <main>
+        <div class="container product-details-container">
+            <div class="product-image-gallery">
+                <img src="smartwatch copy.jpeg" alt="Luxury Smart Watch">
+            </div>
+
+            <div class="product-info">
+                <h1>Luxury Smart Watch Series 8 Pro</h1>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.5 / 150 Reviews)
+                </div>
+
+                <div class="price-block">
+                    <span class="current-price">$199.99</span>
+                    <span style="text-decoration: line-through; color: #999; margin-left: 15px;">$250.00</span>
+                    <p style="color: green; margin-top: 5px;">20% OFF</p>
+                </div>
+
+                <div class="options-group">
+                    <label for="size-select">Select Size:</label>
+                    <select id="size-select" onchange="updateSize(this.value)">
+                        <option value="">Choose an option</option>
+                        <option value="40mm">40 mm</option>
+                        <option value="44mm">44 mm</option>
+                        <option value="48mm">48 mm</option>
+                    </select>
+                    <p id="size-message"></p>
+                </div>
+
+                <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                </button>
+                
+                <p style="margin-top: 20px;">Product Description:</p>
+                <ul style="list-style: disc; margin-left: 20px; color: #555;">
+                    <li>High-resolution AMOLED display.</li>
+                    <li>14-day long battery life.</li>
+                    <li>Water resistance up to 50 meters.</li>
+                    <li>Built-in GPS and heart rate monitoring.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container description-reviews-section">
+            <h2>Customer Reviews [cite: 35]</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>⭐ ⭐ ⭐ ⭐ ⭐ - Excellent quality and fast shipping!</p>
+                    <small>— Verified Buyer</small>
+                </div>
+                <div class="review-card">
+                    <p>⭐ ⭐ ⭐ ⭐ - Battery life is great, but the app could be better.</p>
+                    <small>— Jane Doe</small>
+                </div>
+            </div>
+            
+            <h2 style="margin-top: 40px;">Related Products [cite: 35]</h2>
+            <p>Similar products section placeholder...</p>
+        </div>
+    </main>
+
+    <footer>...</footer> 
+
+    <script>
+        function updateSize(size) {
+            const messageElement = document.getElementById('size-message');
+            if (size) {
+                messageElement.innerText = `You selected ${size}`;
+                messageElement.style.color = 'green';
+            } else {
+                messageElement.innerText = `Please select a size`;
+                messageElement.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>
