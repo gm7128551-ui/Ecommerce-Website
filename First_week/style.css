@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* === HEADER STYLES === */
+
+/* Top Bar */
+.top-bar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
+
+/* Main Header Area */
+.main-header {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #ff6a00; /* Alibaba orange style theme */
+    font-size: 28px;
+}
+
+/* Search Bar Styling (Alibaba Style) */
+.search-bar form {
+    display: flex;
+    border: 2px solid #ff6a00;
+    border-radius: 20px; /* Rounded corners like the design */
+    overflow: hidden;
+    width: 500px;
+}
+
+.search-bar select {
+    border: none;
+    padding: 10px;
+    background: #f9f9f9;
+    border-right: 1px solid #ddd;
+    outline: none;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* User Actions (Sign In / Cart) */
+.user-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.action-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+.action-item i {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Navigation Bar */
+.main-nav {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.main-nav a:hover {
+    color: #ff6a00;
+}
+
+/* === FOOTER STYLES === */
+footer {
+    background-color: #fff;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-top {
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Columns Grid */
+    gap: 20px;
+}
+
+.footer-col h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
